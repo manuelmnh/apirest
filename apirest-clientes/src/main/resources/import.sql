@@ -1,0 +1,10 @@
+insert into clientes (nombre,apellido,email,telefono,created_at) values('Jose','Perez','jp@email.com',6321545,'2022-10-24');
+insert into clientes (nombre,apellido,email,telefono,created_at) values('Manuel','Perez','jp@email.com',6321545,'2022-10-24');
+insert into clientes (nombre,apellido,email,telefono,created_at) values('Pedro','Perez','jp@email.com',6321545,'2022-10-24');
+insert into clientes (nombre,apellido,email,telefono,created_at) values('Luis','Perez','jp@email.com',6321545,'2022-10-24');
+insert into clientes (nombre,apellido,email,telefono,created_at) values('Antonio','Perez','jp@email.com',6321545,'2022-10-24');
+insert into clientes (nombre,apellido,email,telefono,created_at) values('Laura','Perez','jp@email.com',6321545,'2022-10-24');
+insert into clientes (nombre,apellido,email,telefono,created_at) values('Sofia','Perez','jp@email.com',6321545,'2022-10-24');
+insert into clientes (nombre,apellido,email,telefono,created_at) values('Andrea','Perez','jp@email.com',6321545,'2022-10-24');
+insert into clientes (nombre,apellido,email,telefono,created_at) values('Esther','Perez','jp@email.com',6321545,'2022-10-24');
+insert into clientes (nombre,apellido,email,telefono,created_at) values('Adriana','Perez','jp@email.com',6321545,'2022-10-24');
