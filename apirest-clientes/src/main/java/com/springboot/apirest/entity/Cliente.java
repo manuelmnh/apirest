@@ -5,10 +5,15 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name="clientes")
@@ -26,6 +31,12 @@ public class Cliente implements Serializable {
 	private String apellido;
 	private String email;
 	private int telefono;
+	private String imagen;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="id_region")
+	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+	private String region;
 	
 	@Column(name="created_at")
 	private Date createdAt;
@@ -65,6 +76,18 @@ public class Cliente implements Serializable {
 	}
 	public void setCreatedAt(Date createdAt) {
 		this.createdAt = createdAt;
+	}
+	public String getImagen() {
+		return imagen;
+	}
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+	public String getRegion() {
+		return region;
+	}
+	public void setRegion(String region) {
+		this.region = region;
 	}
 	
 }
