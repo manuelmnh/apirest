@@ -137,6 +137,7 @@ public class ClienteController {
 			clienteUpdate.setApellido(cliente.getApellido());
 			clienteUpdate.setEmail(cliente.getEmail());
 			clienteUpdate.setTelefono(cliente.getTelefono());
+			clienteUpdate.setRegion(cliente.getRegion());
 		}catch (DataAccessException e){
 			response.put("mensaje", "Error al realizar la insercion en base de datos");
 			response.put("error", e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));

@@ -33,14 +33,14 @@ public class Cliente implements Serializable {
 	private int telefono;
 	private String imagen;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="id_region")
-	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-	private String region;
-	
 	@Column(name="created_at")
 	private Date createdAt;
 	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="id_region")
+	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+	private Region region;
+		
 	public long getId() {
 		return id;
 	}
@@ -83,10 +83,10 @@ public class Cliente implements Serializable {
 	public void setImagen(String imagen) {
 		this.imagen = imagen;
 	}
-	public String getRegion() {
+	public Region getRegion() {
 		return region;
 	}
-	public void setRegion(String region) {
+	public void setRegion(Region region) {
 		this.region = region;
 	}
 	

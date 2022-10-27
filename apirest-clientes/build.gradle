@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.7.5'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 	id 'java'
+	
 }
 
 group = 'com.springboot.apirest'
@@ -17,6 +18,16 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.mysql:mysql-connector-j'
+	// https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui
+	implementation 'org.springdoc:springdoc-openapi-ui:1.6.4'
+	// https://mvnrepository.com/artifact/org.springframework.security.oauth/spring-security-oauth2
+	implementation 'org.springframework.security.oauth:spring-security-oauth2:2.5.1.RELEASE'
+	// https://mvnrepository.com/artifact/org.springframework.security/spring-security-jwt
+	implementation 'org.springframework.security:spring-security-jwt:1.1.1.RELEASE'
+	// https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api
+	implementation 'javax.xml.bind:jaxb-api'
+	// https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime
+	implementation 'org.glassfish.jaxb:jaxb-runtime'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
